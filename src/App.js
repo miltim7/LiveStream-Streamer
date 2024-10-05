@@ -16,7 +16,7 @@ function App() {
   };
 
   useEffect(() => {
-    socketRef.current = io('http://localhost:5000');
+    socketRef.current = io('http://localhost:5001');
 
     socketRef.current.on('connect', () => {
       console.log('Стример подключился к серверу сигнализации');
